@@ -1,7 +1,7 @@
 # Simple Redirect
 
-The purpose of this task was a basic rundown on how to go from one site to another. When the user clicks on one of the images, it will take them from that site, to the 
-site corresponding to the image shown.
+The purpose of this task was a basic rundown on how to go from one site to another. When the user clicks on one of the images, it will take them from that site to the 
+site corresponding with the image shown.
 
 ## Purpose
 
