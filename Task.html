@@ -1,0 +1,77 @@
+<html>
+
+<body>
+    <h1>
+        Click on any image to be taken to that particular website.
+    </h1>
+
+<!-- In case you want to set the images next to each other, the format below is very useful -->
+<div class="row">
+    <div class="column">
+        <!-- To set a link on an image, first place the 'a' tag. This allows you to set up the reference link to the site you want the 
+        image to take you to. -->
+        <a href="https://www.manutd.com/" target="_blank" onclick="united()">
+        <!-- Next is to find and place the image you want displayed. -->
+            <img src="./img/manUtd.png" alt="Man United" style="width:50%" />
+        </a>
+    </div>
+    <div class="column">
+        <a href="https://www.playstation.com/en-za/" target="_blank" onclick="playstation()">
+            <img src="./img/playstation.png" alt="playstation" style="width:50%" />
+        </a>
+    </div>
+    <div class="column">
+        <a href="https://www.facebook.com/" target="_blank" onclick="facebook()">
+            <img src="./img/fb_icon_325x325.png" alt="facebook" style="width:50%" />
+        </a>
+    </div>
+    <div class="column">
+        <a href="https://www.youtube.com/" target="_blank" onclick="youtube()">
+            <img src="./img/youtube.png" alt="youtube" style="width:50%" />
+        </a>
+    </div>
+</div>
+ 
+<script>
+    //Next are the popup messages to confirm where the user is going.
+    function united() {
+    if(!alert("You are going to Manchester Uniteds homepage")) return;
+    window.open('https://www.manutd.com/','width=400,height=400');
+    }
+
+    function playstation() {
+    if(!alert("You are going to Playstations homepage")) return;
+    window.open('https://www.playstation.com/en-za/','width=400,height=400');
+    }
+
+    function facebook() {
+    if(!alert("You are going to Facebooks homepage")) return;
+    window.open('https://www.facebook.com/','width=400,height=400');
+    }
+
+    function youtube() {
+    if(!alert("You are going to YouTubes homepage")) return;
+    window.open('https://www.youtube.com/','width=400,height=400');
+    }
+</script>
+    
+
+<style>
+    /* Next is to add the css to place them next to each other. */
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+</body>
+
+</html>
